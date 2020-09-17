@@ -1,0 +1,82 @@
+*, *::before,*::after {
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #985EFF;
+}
+body.correct {
+    background-color: green;
+
+}
+
+body.incorrect {
+background-color: red;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    padding: 12px;
+    box-shadow: 0 0 10px 2px;
+}
+
+#question {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: white
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+background-color: green;
+}
+
+.btn.incorrect {
+    background-color: red;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
