@@ -1,34 +1,34 @@
-*, *::before,*::after {
-    box-sizing: border-box;
-    font-family: 'Amatic SC', cursive;
+*, *::before,*::after { /* sets up the box sizing for all the elements, the asterik selects all elements and applies same style to it, so everything was a box border and same font */
+    box-sizing: border-box; /*all elements, before and after, This will force any ::before or ::after element to use the box-sizing property as well,*/
+    font-family: 'Grandstander', cursive; /*Font downloaded from Google Fonts*/
 }
 
 body {
     padding: 0;
     margin: 0;
-    display: flex;
-    width: 100vw;
+    display: flex; /*this made the quiz dead centre of the screen*/
+    width: 100vw; /*vw means view width, which means its going to take up the entire width, vh means view height*/
     height: 100vh;
-    justify-content: center;
+    justify-content: center; /*this aligns the flex items at the centre of the container, also have - flex-start|flex-end|center|space-between|space-around|*/
     align-items: center;
-    background-color: #985EFF;
+    background-color: #FFA366 /*main background / default background color*/
 }
-body.correct {
+body.correct { /*for when answer is correct - using classes, body class gets changed or added in the HTML*/
     background-color: green;
 
 }
 
-body.incorrect {
+body.incorrect { /*for when answer is incorrect*/
 background-color: red;
 }
 
-.container {
+.container { /*holds question, answers, start and next*/
     width: 800px;
     max-width: 80%;
     background-color: whitesmoke;
     border-radius: 7px;
     padding: 12px;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 10px 2px; /*creates blur outline/shadow around container*/
 }
 
 #question {
@@ -36,19 +36,19 @@ background-color: red;
     font-size: 1.5rem;
 }
 
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap: 10px;
-    margin: 20px 0;
+.btn-grid { /*the 4 answer buttons*/
+    display: grid; /*this setting on its own lined them up one on top of each other*/
+    grid-template-columns: repeat(2,auto); /*this gives two columns, repeat twice, auto width*/
+    gap: 10px; /*gap between columns down the middle*/
+    margin: 20px 0; /*this spaced out button grid from question and start next buttons, 20px on top and bottom, 0 on left and right*/
 }
 
-.btn {
-    background-color: white
+.btn { /*applied to every button on page*/
+    background-color: white;
     border: 1px solid;
     border-radius: 5px;
     padding: 5px 10px;
-    color: black
+    color: black;
     outline: none;
     font-size: 1.4rem;
 }
@@ -57,7 +57,7 @@ background-color: red;
     border-color: black;
 }
 
-.btn.correct {
+.btn.correct { /*using classes again*/
 background-color: green;
 }
 
@@ -68,7 +68,7 @@ background-color: green;
 .start-btn, .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 20px; /*made buttons bigger*/
 }
 
 .controls {
@@ -77,6 +77,6 @@ background-color: green;
     align-items: center;
 }
 
-.hide {
-    display: none;
+.hide { /*everything with class of hide, not displayed until otherwise*/
+    display: none; /*leaves with just the start button in screen center*/
 }

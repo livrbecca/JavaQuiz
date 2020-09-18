@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Create this first-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="quiz.css" rel="stylesheet">
     <script defer src="quiz.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Quiz App</title>
 </head>
 <body>
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
+    <div class="container"> <!--Card-like affect that holds the quiz-->
+        <div id="question-container" class="hide"> <!--Questions will come before the next & start button. Add class of hide, so you know its hidden-->
+            <div id="question">Question</div> <!--inside question container, div that will contain the actual quix questions-->
                 <div id="answer-buttons" class="btn-grid">
                     <button class="btn">Answer 1</button>
                     <button class="btn">Answer 2</button>
@@ -19,7 +19,7 @@
                     <button class="btn">Answer 4</button>
                 </div>
         </div>
-        <div class="controls">
+        <div class="controls"> <!--controls. both buttons will need sep ID and classes. next button needs hide class-->
             <button id="startbtn" class="start-btn btn">Start</button>
             <button id="nextbtn" class="next-btn btn hide">Next</button>
         </div>
